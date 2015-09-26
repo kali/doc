@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `PtrOfFilterEngine` struct in crate `opencv`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, PtrOfFilterEngine">
+
+    <title>opencv::types::PtrOfFilterEngine - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>types</a></p><script>window.sidebarCurrent = {name: 'PtrOfFilterEngine', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>opencv</a>::<wbr><a href='index.html'>types</a>::<wbr><a class='struct' href=''>PtrOfFilterEngine</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-53712' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-e52f8464402f88b5/out/PtrOfFilterEngine.type.rs.html#75-77' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct PtrOfFilterEngine {
+    pub ptr: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+}</pre><div class='docblock'><p>The Main Class for Image Filtering.</p>
+
+<p>The class can be used to apply an arbitrary filtering operation to an image.
+It contains all the necessary intermediate buffers, it computes extrapolated values
+of the &quot;virtual&quot; pixels outside of the image etc.
+Pointers to the initialized cv::FilterEngine instances
+are returned by various OpenCV functions, such as cv::createSeparableLinearFilter(),
+cv::createLinearFilter(), cv::createGaussianFilter(), cv::createDerivFilter(),
+cv::createBoxFilter() and cv::createMorphologyFilter().</p>
+
+<p>Using the class you can process large images by parts and build complex pipelines
+that include filtering as some of the stages. If all you need is to apply some pre-defined
+filtering operation, you may use cv::filter2D(), cv::erode(), cv::dilate() etc.
+functions that create FilterEngine internally.</p>
+
+<p>Here is the example on how to use the class to implement Laplacian operator, which is the sum of
+second-order derivatives. More complex variant for different types is implemented in cv::Laplacian().</p>
+
+<p>\code
+void laplace_f(const Mat&amp; src, Mat&amp; dst)
+{
+CV_Assert( src.type() == CV_32F );
+// make sure the destination array has the proper size and type
+dst.create(src.size(), src.type());</p>
+
+<p>// get the derivative and smooth kernels for d2I/dx2.
+// for d2I/dy2 we could use the same kernels, just swapped
+Mat kd, ks;
+getSobelKernels( kd, ks, 2, 0, ksize, false, ktype );</p>
+
+<p>// let&#39;s process 10 source rows at once
+int DELTA = std::min(10, src.rows);
+Ptr<FilterEngine> Fxx = createSeparableLinearFilter(src.type(),
+dst.type(), kd, ks, Point(-1,-1), 0, borderType, borderType, Scalar() );
+Ptr<FilterEngine> Fyy = createSeparableLinearFilter(src.type(),
+dst.type(), ks, kd, Point(-1,-1), 0, borderType, borderType, Scalar() );</p>
+
+<p>int y = Fxx-&gt;start(src), dsty = 0, dy = 0;
+Fyy-&gt;start(src);
+const uchar* sptr = src.data + y*src.step;</p>
+
+<p>// allocate the buffers for the spatial image derivatives;
+// the buffers need to have more than DELTA rows, because at the
+// last iteration the output may take max(kd.rows-1,ks.rows-1)
+// rows more than the input.
+Mat Ixx( DELTA + kd.rows - 1, src.cols, dst.type() );
+Mat Iyy( DELTA + kd.rows - 1, src.cols, dst.type() );</p>
+
+<p>// inside the loop we always pass DELTA rows to the filter
+// (note that the &quot;proceed&quot; method takes care of possibe overflow, since
+// it was given the actual image height in the &quot;start&quot; method)
+// on output we can get:
+//  * &lt; DELTA rows (the initial buffer accumulation stage)
+//  * = DELTA rows (settled state in the middle)
+//  * &gt; DELTA rows (then the input image is over, but we generate
+//                  &quot;virtual&quot; rows using the border mode and filter them)
+// this variable number of output rows is dy.
+// dsty is the current output row.
+// sptr is the pointer to the first input row in the portion to process
+for( ; dsty &lt; dst.rows; sptr += DELTA*src.step, dsty += dy )
+{
+Fxx-&gt;proceed( sptr, (int)src.step, DELTA, Ixx.data, (int)Ixx.step );
+dy = Fyy-&gt;proceed( sptr, (int)src.step, DELTA, d2y.data, (int)Iyy.step );
+if( dy &gt; 0 )
+{
+Mat dstripe = dst.rowRange(dsty, dsty + dy);
+add(Ixx.rowRange(0, dy), Iyy.rowRange(0, dy), dstripe);
+}
+}
+}
+\endcode</p>
+</div><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.ptr'><code>ptr</code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../opencv/types/struct.PtrOfFilterEngine.html' title='opencv::types::PtrOfFilterEngine'>PtrOfFilterEngine</a></code></h3><div class='impl-items'><h4 id='method.as_raw_PtrOfFilterEngine' class='method'><code>unsafe fn <a href='#method.as_raw_PtrOfFilterEngine' class='fnname'>as_raw_PtrOfFilterEngine</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a></code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div>
+            <div class="shortcuts">
+                <h1>Keyboard Shortcuts</h1>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h1>Search Tricks</h1>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>typedef</code> (or
+                    <code>tdef</code>).
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opencv";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>

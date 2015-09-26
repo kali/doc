@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `Subdiv2D` struct in crate `opencv`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, Subdiv2D">
+
+    <title>opencv::imgproc::Subdiv2D - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <section class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>imgproc</a></p><script>window.sidebarCurrent = {name: 'Subdiv2D', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </section>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>opencv</a>::<wbr><a href='index.html'>imgproc</a>::<wbr><a class='struct' href=''>Subdiv2D</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-28202' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-e52f8464402f88b5/out/imgproc.rs.html#2043-2045' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct Subdiv2D {
+    pub ptr: <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a>,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.ptr'><code>ptr</code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../opencv/imgproc/struct.Subdiv2D.html' title='opencv::imgproc::Subdiv2D'>Subdiv2D</a></code></h3><div class='impl-items'><h4 id='method.as_raw_Subdiv2D' class='method'><code>fn <a href='#method.as_raw_Subdiv2D' class='fnname'>as_raw_Subdiv2D</a>(&amp;self) -&gt; <a href='http://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/types/common/c95/enum.c_void.html' title='libc::types::common::c95::c_void'>c_void</a></a></code></h4>
+</div><h3 class='impl'><code>impl <a class='struct' href='../../opencv/imgproc/struct.Subdiv2D.html' title='opencv::imgproc::Subdiv2D'>Subdiv2D</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='#method.default' class='fnname'>default</a>() -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/imgproc/struct.Subdiv2D.html' title='opencv::imgproc::Subdiv2D'>Subdiv2D</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(rect: <a class='struct' href='../../opencv/core/struct.Rect.html' title='opencv::core::Rect'>Rect</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/imgproc/struct.Subdiv2D.html' title='opencv::imgproc::Subdiv2D'>Subdiv2D</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.init_delaunay' class='method'><code>fn <a href='#method.init_delaunay' class='fnname'>init_delaunay</a>(&amp;mut self, rect: <a class='struct' href='../../opencv/core/struct.Rect.html' title='opencv::core::Rect'>Rect</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.insert' class='method'><code>fn <a href='#method.insert' class='fnname'>insert</a>(&amp;mut self, pt: <a class='struct' href='../../opencv/core/struct.Point2f.html' title='opencv::core::Point2f'>Point2f</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.insert_n' class='method'><code>fn <a href='#method.insert_n' class='fnname'>insert_n</a>(&amp;mut self, ptvec: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint2f.html' title='opencv::types::VectorOfPoint2f'>VectorOfPoint2f</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.locate' class='method'><code>fn <a href='#method.locate' class='fnname'>locate</a>(&amp;mut self, pt: <a class='struct' href='../../opencv/core/struct.Point2f.html' title='opencv::core::Point2f'>Point2f</a>, edge: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, vertex: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_edge_list' class='method'><code>fn <a href='#method.get_edge_list' class='fnname'>get_edge_list</a>(&amp;self, edgeList: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfVec4f.html' title='opencv::types::VectorOfVec4f'>VectorOfVec4f</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_triangle_list' class='method'><code>fn <a href='#method.get_triangle_list' class='fnname'>get_triangle_list</a>(&amp;self, triangleList: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfVec6f.html' title='opencv::types::VectorOfVec6f'>VectorOfVec6f</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_voronoi_facet_list' class='method'><code>fn <a href='#method.get_voronoi_facet_list' class='fnname'>get_voronoi_facet_list</a>(&amp;mut self, idx: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfint.html' title='opencv::types::VectorOfint'>VectorOfint</a>, facetList: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfVectorOfPoint2f.html' title='opencv::types::VectorOfVectorOfPoint2f'>VectorOfVectorOfPoint2f</a>, facetCenters: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint2f.html' title='opencv::types::VectorOfPoint2f'>VectorOfPoint2f</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_edge' class='method'><code>fn <a href='#method.get_edge' class='fnname'>get_edge</a>(&amp;self, edge: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, nextEdgeType: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.next_edge' class='method'><code>fn <a href='#method.next_edge' class='fnname'>next_edge</a>(&amp;self, edge: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.rotate_edge' class='method'><code>fn <a href='#method.rotate_edge' class='fnname'>rotate_edge</a>(&amp;self, edge: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, rotate: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.sym_edge' class='method'><code>fn <a href='#method.sym_edge' class='fnname'>sym_edge</a>(&amp;self, edge: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../opencv/imgproc/struct.Subdiv2D.html' title='opencv::imgproc::Subdiv2D'>Subdiv2D</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='http://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <div id="help" class="hidden">
+        <div>
+            <div class="shortcuts">
+                <h1>Keyboard Shortcuts</h1>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h1>Search Tricks</h1>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>typedef</code> (or
+                    <code>tdef</code>).
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code>)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opencv";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script async src="../../search-index.js"></script>
+</body>
+</html>
