@@ -24,10 +24,10 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>core</a></p><script>window.sidebarCurrent = {name: 'get_tick_frequency', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
@@ -46,7 +46,7 @@
                 [<span class='inner'>&#x2212;</span>]
             </a>
         </span><a id='src-8925' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-81dfd9548ec579af/out/core.rs.html#1375-1385' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn get_tick_frequency() -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>Returns the number of ticks per seconds.</p>
+<pre class='rust fn'>pub fn get_tick_frequency() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>Returns the number of ticks per seconds.</p>
 
 <p>The function returns the number of ticks (as returned by cv::getTickCount()) per second.
 The following code computes the execution time in milliseconds:</p>
@@ -61,10 +61,12 @@ exec_time = ((double)getTickCount() - exec_time)*1000./getTickFrequency();
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
+    <aside id="help" class="hidden">
         <div>
+            <h1 class="hidden">Help</h1>
+
             <div class="shortcuts">
-                <h1>Keyboard Shortcuts</h1>
+                <h2>Keyboard Shortcuts</h2>
 
                 <dl>
                     <dt>?</dt>
@@ -81,7 +83,7 @@ exec_time = ((double)getTickCount() - exec_time)*1000./getTickFrequency();
             </div>
 
             <div class="infos">
-                <h1>Search Tricks</h1>
+                <h2>Search Tricks</h2>
 
                 <p>
                     Prefix searches with a type followed by a colon (e.g.
@@ -91,8 +93,8 @@ exec_time = ((double)getTickCount() - exec_time)*1000./getTickFrequency();
                 <p>
                     Accepted types are: <code>fn</code>, <code>mod</code>,
                     <code>struct</code>, <code>enum</code>,
-                    <code>trait</code>, <code>typedef</code> (or
-                    <code>tdef</code>).
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
                 </p>
 
                 <p>
@@ -101,7 +103,7 @@ exec_time = ((double)getTickCount() - exec_time)*1000./getTickFrequency();
                 </p>
             </div>
         </div>
-    </div>
+    </aside>
 
     
 

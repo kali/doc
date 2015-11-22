@@ -24,10 +24,10 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>calib3d</a></p><script>window.sidebarCurrent = {name: 'stereo_rectify_uncalibrated', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
@@ -46,7 +46,7 @@
                 [<span class='inner'>&#x2212;</span>]
             </a>
         </span><a id='src-53099' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-81dfd9548ec579af/out/calib3d.rs.html#520-530' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn stereo_rectify_uncalibrated(points1: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, points2: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, F: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, imgSize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, H1: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, H2: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, threshold: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>computes the rectification transformation for an uncalibrated stereo camera (zero distortion is assumed)</p>
+<pre class='rust fn'>pub fn stereo_rectify_uncalibrated(points1: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, points2: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, F: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, imgSize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, H1: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, H2: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, threshold: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>computes the rectification transformation for an uncalibrated stereo camera (zero distortion is assumed)</p>
 
 <p>default value for arguments:
   - threshold: default 5</p>
@@ -55,10 +55,12 @@
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
+    <aside id="help" class="hidden">
         <div>
+            <h1 class="hidden">Help</h1>
+
             <div class="shortcuts">
-                <h1>Keyboard Shortcuts</h1>
+                <h2>Keyboard Shortcuts</h2>
 
                 <dl>
                     <dt>?</dt>
@@ -75,7 +77,7 @@
             </div>
 
             <div class="infos">
-                <h1>Search Tricks</h1>
+                <h2>Search Tricks</h2>
 
                 <p>
                     Prefix searches with a type followed by a colon (e.g.
@@ -85,8 +87,8 @@
                 <p>
                     Accepted types are: <code>fn</code>, <code>mod</code>,
                     <code>struct</code>, <code>enum</code>,
-                    <code>trait</code>, <code>typedef</code> (or
-                    <code>tdef</code>).
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
                 </p>
 
                 <p>
@@ -95,7 +97,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </aside>
 
     
 

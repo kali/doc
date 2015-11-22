@@ -24,10 +24,10 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>imgproc</a></p><script>window.sidebarCurrent = {name: 'warp_perspective', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
@@ -46,7 +46,7 @@
                 [<span class='inner'>&#x2212;</span>]
             </a>
         </span><a id='src-27132' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-81dfd9548ec579af/out/imgproc.rs.html#1784-1794' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn warp_perspective(src: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, dst: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, M: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, dsize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, flags: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, borderMode: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, borderValue: <a class='struct' href='../../opencv/core/struct.Scalar.html' title='opencv::core::Scalar'>Scalar</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>warps the image using perspective transformation</p>
+<pre class='rust fn'>pub fn warp_perspective(src: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, dst: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, M: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, dsize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, flags: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, borderMode: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, borderValue: <a class='struct' href='../../opencv/core/struct.Scalar.html' title='opencv::core::Scalar'>Scalar</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre><div class='docblock'><p>warps the image using perspective transformation</p>
 
 <p>default value for arguments:
   - flags: default INTER_LINEAR
@@ -57,10 +57,12 @@
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
+    <aside id="help" class="hidden">
         <div>
+            <h1 class="hidden">Help</h1>
+
             <div class="shortcuts">
-                <h1>Keyboard Shortcuts</h1>
+                <h2>Keyboard Shortcuts</h2>
 
                 <dl>
                     <dt>?</dt>
@@ -77,7 +79,7 @@
             </div>
 
             <div class="infos">
-                <h1>Search Tricks</h1>
+                <h2>Search Tricks</h2>
 
                 <p>
                     Prefix searches with a type followed by a colon (e.g.
@@ -87,8 +89,8 @@
                 <p>
                     Accepted types are: <code>fn</code>, <code>mod</code>,
                     <code>struct</code>, <code>enum</code>,
-                    <code>trait</code>, <code>typedef</code> (or
-                    <code>tdef</code>).
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
                 </p>
 
                 <p>
@@ -97,7 +99,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </aside>
 
     
 

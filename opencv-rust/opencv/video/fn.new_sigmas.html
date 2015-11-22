@@ -24,10 +24,10 @@
 
     
 
-    <section class="sidebar">
+    <nav class="sidebar">
         
         <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>video</a></p><script>window.sidebarCurrent = {name: 'new_sigmas', ty: 'fn', relpath: ''};</script><script defer src="sidebar-items.js"></script>
-    </section>
+    </nav>
 
     <nav class="sub">
         <form class="search-form js-only">
@@ -46,15 +46,17 @@
                 [<span class='inner'>&#x2212;</span>]
             </a>
         </span><a id='src-44430' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-81dfd9548ec579af/out/video.rs.html#58-68' title='goto source code'>[src]</a></span></h1>
-<pre class='rust fn'>pub fn new_sigmas(from: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, to: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, flow: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, layers: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, averaging_block_size: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, max_flow: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, sigma_dist: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, sigma_color: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, postprocess_window: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, sigma_dist_fix: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, sigma_color_fix: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, occ_thr: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, upscale_averaging_radius: <a href='http://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, upscale_sigma_dist: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, upscale_sigma_color: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, speed_up_thr: <a href='http://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='http://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='http://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='http://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre></section>
+<pre class='rust fn'>pub fn new_sigmas(from: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, to: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, flow: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, layers: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, averaging_block_size: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, max_flow: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, sigma_dist: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, sigma_color: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, postprocess_window: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, sigma_dist_fix: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, sigma_color_fix: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, occ_thr: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, upscale_averaging_radius: <a href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, upscale_sigma_dist: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, upscale_sigma_color: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, speed_up_thr: <a href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</pre></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
 
-    <div id="help" class="hidden">
+    <aside id="help" class="hidden">
         <div>
+            <h1 class="hidden">Help</h1>
+
             <div class="shortcuts">
-                <h1>Keyboard Shortcuts</h1>
+                <h2>Keyboard Shortcuts</h2>
 
                 <dl>
                     <dt>?</dt>
@@ -71,7 +73,7 @@
             </div>
 
             <div class="infos">
-                <h1>Search Tricks</h1>
+                <h2>Search Tricks</h2>
 
                 <p>
                     Prefix searches with a type followed by a colon (e.g.
@@ -81,8 +83,8 @@
                 <p>
                     Accepted types are: <code>fn</code>, <code>mod</code>,
                     <code>struct</code>, <code>enum</code>,
-                    <code>trait</code>, <code>typedef</code> (or
-                    <code>tdef</code>).
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
                 </p>
 
                 <p>
@@ -91,7 +93,7 @@
                 </p>
             </div>
         </div>
-    </div>
+    </aside>
 
     
 
