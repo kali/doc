@@ -46,12 +46,12 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-1930' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-a6cc39cecbf751e4/out/core.rs.html#2533-2535' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-1930' class='srclink' href='../../src/opencv/home/travis/build/kali/opencv-rust/target/debug/build/opencv-a6cc39cecbf751e4/out/core.rs.html#2533-2535' title='goto source code'>[src]</a></span></h1>
 <pre class='rust struct'>pub struct Mat {
-    pub ptr: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a></a>,
+    pub ptr: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a>,
 }</pre><h2 class='fields'>Fields</h2>
 <table><tr class='stab '>
-                                  <td id='structfield.ptr'><code>ptr</code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a></code></h3><div class='impl-items'><h4 id='method.as_raw_Mat' class='method'><code>fn <a href='#method.as_raw_Mat' class='fnname'>as_raw_Mat</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut <a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a></a></code></h4>
+                                  <td id='structfield.ptr'><code>ptr</code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a></code></h3><div class='impl-items'><h4 id='method.as_raw_Mat' class='method'><code>fn <a href='#method.as_raw_Mat' class='fnname'>as_raw_Mat</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a></code></h4>
 </div><h3 class='impl'><code>impl <a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a></code></h3><div class='impl-items'><h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
 <div class='docblock'><p>default constructor</p>
 </div><h4 id='method.new_rows_cols' class='method'><code>fn <a href='#method.new_rows_cols' class='fnname'>new_rows_cols</a>(rows: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, cols: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, _type: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
@@ -168,6 +168,15 @@
 <p>default value for arguments:
   - depth: default -1
   - requireContinuous: default true</p>
+</div><h4 id='method.ptr0' class='method'><code>fn <a href='#method.ptr0' class='fnname'>ptr0</a>(&amp;mut self, i0: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>returns pointer to i0-th submatrix along the dimension #0</p>
+
+<p>default value for arguments:
+  - i0: default 0</p>
+</div><h4 id='method.ptr1' class='method'><code>fn <a href='#method.ptr1' class='fnname'>ptr1</a>(&amp;mut self, i0: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, i1: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>returns pointer to (i0,i1) submatrix along the dimensions #0 and #1</p>
+</div><h4 id='method.ptr2' class='method'><code>fn <a href='#method.ptr2' class='fnname'>ptr2</a>(&amp;mut self, i0: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, i1: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, i2: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.u8.html'>u8</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>returns pointer to (i0,i1,i3) submatrix along the dimensions #0, #1, #2</p>
 </div><h4 id='method.size' class='method'><code>fn <a href='#method.size' class='fnname'>size</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
 </div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
 </div></section>
@@ -213,7 +222,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>

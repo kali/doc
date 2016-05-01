@@ -46,7 +46,7 @@
             <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                 [<span class='inner'>&#x2212;</span>]
             </a>
-        </span><a id='src-6671' class='srclink' href='../../src/opencv///home/travis/build/kali/opencv-rust/target/debug/build/opencv-a6cc39cecbf751e4/out/calib3d.rs.html#2-666' title='goto source code'>[src]</a></span></h1>
+        </span><a id='src-6689' class='srclink' href='../../src/opencv/home/travis/build/kali/opencv-rust/target/debug/build/opencv-a6cc39cecbf751e4/out/calib3d.rs.html#2-666' title='goto source code'>[src]</a></span></h1>
 <h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
 <table>
                     <tr class=' module-item'>
@@ -712,7 +712,6 @@
                                title='opencv::calib3d::calibration_matrix_values'>calibration_matrix_values</a></td>
                         <td class='docblock short'>
                              <p>computes several useful camera characteristics from the camera matrix, camera frame resolution and the physical sensor size.</p>
-
                         </td>
                     </tr>
                 
@@ -721,7 +720,6 @@
                                title='opencv::calib3d::compose_rt'>compose_rt</a></td>
                         <td class='docblock short'>
                              <p>composes 2 [R|t] transformations together. Also computes the derivatives of the result w.r.t the arguments</p>
-
                         </td>
                     </tr>
                 
@@ -730,7 +728,6 @@
                                title='opencv::calib3d::compute_correspond_epilines'>compute_correspond_epilines</a></td>
                         <td class='docblock short'>
                              <p>finds coordinates of epipolar lines corresponding the specified points</p>
-
                         </td>
                     </tr>
                 
@@ -739,7 +736,6 @@
                                title='opencv::calib3d::convert_points_from_homogeneous'>convert_points_from_homogeneous</a></td>
                         <td class='docblock short'>
                              <p>converts point coordinates from homogeneous to normal pixel coordinates ((x,y,z)-&gt;(x/z, y/z))</p>
-
                         </td>
                     </tr>
                 
@@ -748,7 +744,6 @@
                                title='opencv::calib3d::convert_points_homogeneous'>convert_points_homogeneous</a></td>
                         <td class='docblock short'>
                              <p>for backward compatibility</p>
-
                         </td>
                     </tr>
                 
@@ -757,7 +752,6 @@
                                title='opencv::calib3d::convert_points_to_homogeneous'>convert_points_to_homogeneous</a></td>
                         <td class='docblock short'>
                              <p>converts point coordinates from normal pixel coordinates to homogeneous coordinates ((x,y)-&gt;(x,y,1))</p>
-
                         </td>
                     </tr>
                 
@@ -782,7 +776,6 @@
                                title='opencv::calib3d::decompose_projection_matrix'>decompose_projection_matrix</a></td>
                         <td class='docblock short'>
                              <p>Decomposes the projection matrix into camera matrix and the rotation martix and the translation vector</p>
-
                         </td>
                     </tr>
                 
@@ -791,7 +784,6 @@
                                title='opencv::calib3d::distort_points'>distort_points</a></td>
                         <td class='docblock short'>
                              <p>distorts 2D points using fisheye model</p>
-
                         </td>
                     </tr>
                 
@@ -799,7 +791,9 @@
                         <td><a class='fn' href='fn.estimate_affine3_d.html'
                                title='opencv::calib3d::estimate_affine3_d'>estimate_affine3_d</a></td>
                         <td class='docblock short'>
-                             
+                             <p>fault value for arguments:
+- ransacThreshold: default 3
+- confidence: default 0.99</p>
                         </td>
                     </tr>
                 
@@ -808,7 +802,6 @@
                                title='opencv::calib3d::find_chessboard_corners'>find_chessboard_corners</a></td>
                         <td class='docblock short'>
                              <p>finds checkerboard pattern of the specified size in the image</p>
-
                         </td>
                     </tr>
                 
@@ -817,7 +810,6 @@
                                title='opencv::calib3d::find_circles_grid_default'>find_circles_grid_default</a></td>
                         <td class='docblock short'>
                              <p>the deprecated function. Use findCirclesGrid() instead of it.</p>
-
                         </td>
                     </tr>
                 
@@ -826,7 +818,6 @@
                                title='opencv::calib3d::find_fundamental_mat'>find_fundamental_mat</a></td>
                         <td class='docblock short'>
                              <p>variant of findFundamentalMat for backward compatibility</p>
-
                         </td>
                     </tr>
                 
@@ -835,7 +826,6 @@
                                title='opencv::calib3d::find_homography'>find_homography</a></td>
                         <td class='docblock short'>
                              <p>variant of findHomography for backward compatibility</p>
-
                         </td>
                     </tr>
                 
@@ -844,7 +834,6 @@
                                title='opencv::calib3d::find_homography_1'>find_homography_1</a></td>
                         <td class='docblock short'>
                              <p>computes the best-fit perspective transformation mapping srcPoints to dstPoints.</p>
-
                         </td>
                     </tr>
                 
@@ -853,7 +842,6 @@
                                title='opencv::calib3d::fisheye_project_points'>fisheye_project_points</a></td>
                         <td class='docblock short'>
                              <p>projects points using fisheye model</p>
-
                         </td>
                     </tr>
                 
@@ -862,7 +850,6 @@
                                title='opencv::calib3d::fisheye_undistort_image'>fisheye_undistort_image</a></td>
                         <td class='docblock short'>
                              <p>undistorts image, optionally changes resolution and camera matrix. If Knew zero identity matrix is used</p>
-
                         </td>
                     </tr>
                 
@@ -871,7 +858,6 @@
                                title='opencv::calib3d::fisheye_undistort_points'>fisheye_undistort_points</a></td>
                         <td class='docblock short'>
                              <p>undistorts 2D points using fisheye model</p>
-
                         </td>
                     </tr>
                 
@@ -880,7 +866,6 @@
                                title='opencv::calib3d::get_valid_disparity_roi'>get_valid_disparity_roi</a></td>
                         <td class='docblock short'>
                              <p>computes valid disparity ROI from the valid ROIs of the rectified images (that are returned by cv::stereoRectify())</p>
-
                         </td>
                     </tr>
                 
@@ -889,7 +874,6 @@
                                title='opencv::calib3d::mat_mul_deriv'>mat_mul_deriv</a></td>
                         <td class='docblock short'>
                              <p>computes derivatives of the matrix product w.r.t each of the multiplied matrix coefficients</p>
-
                         </td>
                     </tr>
                 
@@ -898,7 +882,6 @@
                                title='opencv::calib3d::project_points'>project_points</a></td>
                         <td class='docblock short'>
                              <p>projects points from the model coordinate space to the image coordinates. Also computes derivatives of the image coordinates w.r.t the intrinsic and extrinsic camera parameters</p>
-
                         </td>
                     </tr>
                 
@@ -907,7 +890,6 @@
                                title='opencv::calib3d::reproject_image_to3_d'>reproject_image_to3_d</a></td>
                         <td class='docblock short'>
                              <p>reprojects disparity image to 3D: (x,y,d)-&gt;(X,Y,Z) using the matrix Q returned by cv::stereoRectify</p>
-
                         </td>
                     </tr>
                 
@@ -916,7 +898,6 @@
                                title='opencv::calib3d::rodrigues'>rodrigues</a></td>
                         <td class='docblock short'>
                              <p>converts rotation vector to rotation matrix or vice versa using Rodrigues transformation</p>
-
                         </td>
                     </tr>
                 
@@ -925,7 +906,6 @@
                                title='opencv::calib3d::rq_decomp3x3'>rq_decomp3x3</a></td>
                         <td class='docblock short'>
                              <p>Computes RQ decomposition of 3x3 matrix</p>
-
                         </td>
                     </tr>
                 
@@ -933,7 +913,9 @@
                         <td><a class='fn' href='fn.solve_pn_p.html'
                                title='opencv::calib3d::solve_pn_p'>solve_pn_p</a></td>
                         <td class='docblock short'>
-                             
+                             <p>fault value for arguments:
+- useExtrinsicGuess: default false
+- flags: default ITERATIVE</p>
                         </td>
                     </tr>
                 
@@ -942,7 +924,6 @@
                                title='opencv::calib3d::solve_pn_p_ransac'>solve_pn_p_ransac</a></td>
                         <td class='docblock short'>
                              <p>computes the camera pose from a few 3D points and the corresponding projections. The outliers are possible.</p>
-
                         </td>
                     </tr>
                 
@@ -951,7 +932,6 @@
                                title='opencv::calib3d::stereo_rectify_uncalibrated'>stereo_rectify_uncalibrated</a></td>
                         <td class='docblock short'>
                              <p>computes the rectification transformation for an uncalibrated stereo camera (zero distortion is assumed)</p>
-
                         </td>
                     </tr>
                 
@@ -1005,7 +985,7 @@
 
                 <p>
                     Search functions by type signature (e.g.
-                    <code>vec -> usize</code>)
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
                 </p>
             </div>
         </div>
