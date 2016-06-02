@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="Source to the Rust file `/home/travis/build/kali/opencv-rust/target/debug/build/opencv-a325e2e27134864a/out/objdetect.externs.rs`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang">
+
+    <title>objdetect.externs.rs.html -- source</title>
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../../../../../main.css">
+    
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content source"><pre class="line-numbers"><span id="1"> 1</span>
+<span id="2"> 2</span>
+<span id="3"> 3</span>
+<span id="4"> 4</span>
+<span id="5"> 5</span>
+<span id="6"> 6</span>
+<span id="7"> 7</span>
+<span id="8"> 8</span>
+<span id="9"> 9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
+<span id="50">50</span>
+<span id="51">51</span>
+<span id="52">52</span>
+<span id="53">53</span>
+<span id="54">54</span>
+<span id="55">55</span>
+<span id="56">56</span>
+<span id="57">57</span>
+<span id="58">58</span>
+<span id="59">59</span>
+<span id="60">60</span>
+<span id="61">61</span>
+<span id="62">62</span>
+<span id="63">63</span>
+<span id="64">64</span>
+<span id="65">65</span>
+<span id="66">66</span>
+<span id="67">67</span>
+<span id="68">68</span>
+<span id="69">69</span>
+<span id="70">70</span>
+<span id="71">71</span>
+<span id="72">72</span>
+<span id="73">73</span>
+<span id="74">74</span>
+<span id="75">75</span>
+<span id="76">76</span>
+<span id="77">77</span>
+<span id="78">78</span>
+<span id="79">79</span>
+<span id="80">80</span>
+<span id="81">81</span>
+</pre><pre class='rust '>
+<span class='kw'>extern</span> <span class='string'>&quot;C&quot;</span> {
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_groupRectangles_VectorOfRect_rectList_VectorOfint_rejectLevels_VectorOfdouble_levelWeights_int_groupThreshold_double_eps</span>(<span class='ident'>rectList</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>rejectLevels</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>levelWeights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>groupThreshold</span>: <span class='ident'>i32</span>, <span class='ident'>eps</span>: <span class='ident'>f64</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_groupRectangles_VectorOfRect_rectList_VectorOfint_weights_int_groupThreshold_double_eps</span>(<span class='ident'>rectList</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>weights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>groupThreshold</span>: <span class='ident'>i32</span>, <span class='ident'>eps</span>: <span class='ident'>f64</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_groupRectangles_VectorOfRect_rectList_int_groupThreshold_double_eps</span>(<span class='ident'>rectList</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>groupThreshold</span>: <span class='ident'>i32</span>, <span class='ident'>eps</span>: <span class='ident'>f64</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_groupRectangles_VectorOfRect_rectList_int_groupThreshold_double_eps_VectorOfint_weights_VectorOfdouble_levelWeights</span>(<span class='ident'>rectList</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>groupThreshold</span>: <span class='ident'>i32</span>, <span class='ident'>eps</span>: <span class='ident'>f64</span>, <span class='ident'>weights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>levelWeights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_groupRectangles_meanshift_VectorOfRect_rectList_VectorOfdouble_foundWeights_VectorOfdouble_foundScales_double_detectThreshold_Size_winDetSize</span>(<span class='ident'>rectList</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundWeights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundScales</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>detectThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>winDetSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_colormap_Mat_quantized_Mat_dst</span>(<span class='ident'>quantized</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>dst</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_getDefaultLINE</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_getDefaultLINEMOD</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_CascadeClassifier</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_CascadeClassifier</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_CascadeClassifier_String_filename</span>(<span class='ident'>filename</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_char</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_empty</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_load_String_filename</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>filename</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_char</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_detectMultiScale_Mat_image_VectorOfRect_objects_double_scaleFactor_int_minNeighbors_int_flags_Size_minSize_Size_maxSize</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>image</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>objects</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>scaleFactor</span>: <span class='ident'>f64</span>, <span class='ident'>minNeighbors</span>: <span class='ident'>i32</span>, <span class='ident'>flags</span>: <span class='ident'>i32</span>, <span class='ident'>minSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>maxSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_detectMultiScale_Mat_image_VectorOfRect_objects_VectorOfint_rejectLevels_VectorOfdouble_levelWeights_double_scaleFactor_int_minNeighbors_int_flags_Size_minSize_Size_maxSize_bool_outputRejectLevels</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>image</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>objects</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>rejectLevels</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>levelWeights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>scaleFactor</span>: <span class='ident'>f64</span>, <span class='ident'>minNeighbors</span>: <span class='ident'>i32</span>, <span class='ident'>flags</span>: <span class='ident'>i32</span>, <span class='ident'>minSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>maxSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>outputRejectLevels</span>: <span class='ident'>bool</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_isOldFormatCascade</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_getOriginalWindowSize</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_c_Size</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_getFeatureType</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_setImage_Mat_unamed_arg</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>unamed_arg</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_setFaceDetectionMaskGenerator</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_CascadeClassifier_MaskGenerator_initializeMask_Mat_unamed_arg</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>unamed_arg</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_DetectionROI</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_FeatureEvaluator</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_clone</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_getFeatureType</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_setImage_Mat_img_Size_origWinSize</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>origWinSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_setWindow_Point_p</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>p</span>: ::<span class='ident'>core</span>::<span class='ident'>Point</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_calcOrd_int_featureIdx</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>featureIdx</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_double</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_calcCat_int_featureIdx</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>featureIdx</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_FeatureEvaluator_create_int_type</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>_type</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_HOGDescriptor</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_HOGDescriptor</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_HOGDescriptor_Size__winSize_Size__blockSize_Size__blockStride_Size__cellSize_int__nbins_int__derivAperture_double__winSigma_int__histogramNormType_double__L2HysThreshold_bool__gammaCorrection_int__nlevels</span>(<span class='ident'>_winSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>_blockSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>_blockStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>_cellSize</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>_nbins</span>: <span class='ident'>i32</span>, <span class='ident'>_derivAperture</span>: <span class='ident'>i32</span>, <span class='ident'>_winSigma</span>: <span class='ident'>f64</span>, <span class='ident'>_histogramNormType</span>: <span class='ident'>i32</span>, <span class='ident'>_L2HysThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>_gammaCorrection</span>: <span class='ident'>bool</span>, <span class='ident'>_nlevels</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_HOGDescriptor_HOGDescriptor_d</span>(<span class='ident'>d</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_getDescriptorSize</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_std_size_t</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_checkDetectorSize</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_getWinSigma</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_double</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_setSVMDetector_InputArray__svmdetector</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>_svmdetector</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_copyTo_HOGDescriptor_c</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>c</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_compute_Mat_img_VectorOffloat_descriptors_Size_winStride_Size_padding_VectorOfPoint_locations</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>descriptors</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>winStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>padding</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>locations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_detect_Mat_img_VectorOfPoint_foundLocations_VectorOfdouble_weights_double_hitThreshold_Size_winStride_Size_padding_VectorOfPoint_searchLocations</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>weights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>hitThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>winStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>padding</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>searchLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_detect_Mat_img_VectorOfPoint_foundLocations_double_hitThreshold_Size_winStride_Size_padding_VectorOfPoint_searchLocations</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>hitThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>winStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>padding</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>searchLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_detectMultiScale_Mat_img_VectorOfRect_foundLocations_VectorOfdouble_foundWeights_double_hitThreshold_Size_winStride_Size_padding_double_scale_double_finalThreshold_bool_useMeanshiftGrouping</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundWeights</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>hitThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>winStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>padding</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>scale</span>: <span class='ident'>f64</span>, <span class='ident'>finalThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>useMeanshiftGrouping</span>: <span class='ident'>bool</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_detectMultiScale_Mat_img_VectorOfRect_foundLocations_double_hitThreshold_Size_winStride_Size_padding_double_scale_double_finalThreshold_bool_useMeanshiftGrouping</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>foundLocations</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>hitThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>winStride</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>padding</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>scale</span>: <span class='ident'>f64</span>, <span class='ident'>finalThreshold</span>: <span class='ident'>f64</span>, <span class='ident'>useMeanshiftGrouping</span>: <span class='ident'>bool</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_computeGradient_Mat_img_Mat_grad_Mat_angleOfs_Size_paddingTL_Size_paddingBR</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>img</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>grad</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>angleOfs</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>paddingTL</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>, <span class='ident'>paddingBR</span>: ::<span class='ident'>core</span>::<span class='ident'>Size</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_getDefaultPeopleDetector</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_HOGDescriptor_getDaimlerPeopleDetector</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_LatentSvmDetector</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_LatentSvmDetector</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_LatentSvmDetector_VectorOfString_filenames_VectorOfString_classNames</span>(<span class='ident'>filenames</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>classNames</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_clear</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_empty</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_load_VectorOfString_filenames_VectorOfString_classNames</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>filenames</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>classNames</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_char</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_detect_Mat_image_VectorOfObjectDetection_objectDetections_float_overlapThreshold_int_numThreads</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>image</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>objectDetections</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>, <span class='ident'>overlapThreshold</span>: <span class='ident'>f32</span>, <span class='ident'>numThreads</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_getClassNames</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_getClassCount</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_std_size_t</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_ObjectDetection</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_ObjectDetection_ObjectDetection</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_LatentSvmDetector_ObjectDetection_ObjectDetection_Rect_rect_float_score_int_classID</span>(<span class='ident'>rect</span>: ::<span class='ident'>core</span>::<span class='ident'>Rect</span>, <span class='ident'>score</span>: <span class='ident'>f32</span>, <span class='ident'>classID</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_SimilarRects</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_SimilarRects_SimilarRects_double__eps</span>(<span class='ident'>_eps</span>: <span class='ident'>f64</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_ColorGradient</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_ColorGradient_ColorGradient</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_ColorGradient_ColorGradient_float_weak_threshold_size_t_num_features_float_strong_threshold</span>(<span class='ident'>weak_threshold</span>: <span class='ident'>f32</span>, <span class='ident'>num_features</span>: <span class='ident'>size_t</span>, <span class='ident'>strong_threshold</span>: <span class='ident'>f32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_DepthNormal</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_DepthNormal_DepthNormal</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_DepthNormal_DepthNormal_int_distance_threshold_int_difference_threshold_size_t_num_features_int_extract_threshold</span>(<span class='ident'>distance_threshold</span>: <span class='ident'>i32</span>, <span class='ident'>difference_threshold</span>: <span class='ident'>i32</span>, <span class='ident'>num_features</span>: <span class='ident'>size_t</span>, <span class='ident'>extract_threshold</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_Detector</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Detector_Detector</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Detector_getT_int_pyramid_level</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>, <span class='ident'>pyramid_level</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Detector_pyramidLevels</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Detector_numTemplates</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Detector_numClasses</span>(<span class='ident'>instance</span>: <span class='op'>*</span><span class='kw'>const</span> <span class='ident'>c_void</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_int</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_Feature</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Feature_Feature</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Feature_Feature_int_x_int_y_int_label</span>(<span class='ident'>x</span>: <span class='ident'>i32</span>, <span class='ident'>y</span>: <span class='ident'>i32</span>, <span class='ident'>label</span>: <span class='ident'>i32</span>) <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_Match</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+<span class='attribute'>#[<span class='ident'>doc</span>(<span class='ident'>hidden</span>)]</span> <span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_objdetect_cv_linemod_Match_Match</span>() <span class='op'>-&gt;</span> <span class='ident'>cv_return_value_void_X</span>;
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>cv_delete_Template</span>(<span class='ident'>ptr</span> : <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>c_void</span>);
+}
+</pre>
+</section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../../../../../../../../../../../";
+        window.currentCrate = "opencv";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../../../../../../../../../../../jquery.js"></script>
+    <script src="../../../../../../../../../../../../main.js"></script>
+    
+    <script defer src="../../../../../../../../../../../../search-index.js"></script>
+</body>
+</html>
