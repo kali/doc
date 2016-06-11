@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="rustdoc">
+    <meta name="description" content="API documentation for the Rust `HOGDescriptor` struct in crate `opencv`.">
+    <meta name="keywords" content="rust, rustlang, rust-lang, HOGDescriptor">
+
+    <title>opencv::objdetect::HOGDescriptor - Rust</title>
+
+    <link rel="stylesheet" type="text/css" href="../../rustdoc.css">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+
+    
+    
+</head>
+<body class="rustdoc">
+    <!--[if lte IE 8]>
+    <div class="warning">
+        This old browser is unsupported and will most likely display funky
+        things.
+    </div>
+    <![endif]-->
+
+    
+
+    <nav class="sidebar">
+        
+        <p class='location'><a href='../index.html'>opencv</a>::<wbr><a href='index.html'>objdetect</a></p><script>window.sidebarCurrent = {name: 'HOGDescriptor', ty: 'struct', relpath: ''};</script><script defer src="sidebar-items.js"></script>
+    </nav>
+
+    <nav class="sub">
+        <form class="search-form js-only">
+            <div class="search-container">
+                <input class="search-input" name="search"
+                       autocomplete="off"
+                       placeholder="Click or press ‘S’ to search, ‘?’ for more options…"
+                       type="search">
+            </div>
+        </form>
+    </nav>
+
+    <section id='main' class="content struct">
+<h1 class='fqn'><span class='in-band'>Struct <a href='../index.html'>opencv</a>::<wbr><a href='index.html'>objdetect</a>::<wbr><a class='struct' href=''>HOGDescriptor</a></span><span class='out-of-band'><span id='render-detail'>
+            <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
+                [<span class='inner'>&#x2212;</span>]
+            </a>
+        </span><a id='src-6406' class='srclink' href='../../src/opencv/home/travis/build/kali/opencv-rust/target/debug/build/opencv-7faa9966d2031df8/out/objdetect.rs.html#466-468' title='goto source code'>[src]</a></span></h1>
+<pre class='rust struct'>pub struct HOGDescriptor {
+    pub ptr: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a>,
+}</pre><h2 class='fields'>Fields</h2>
+<table><tr class='stab '>
+                                  <td id='structfield.ptr'><code>ptr</code></td><td></td></tr></table><h2 id='methods'>Methods</h2><h3 class='impl'><code>impl <a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a></code></h3><div class='impl-items'><h4 id='method.as_raw_HOGDescriptor' class='method'><code>fn <a href='#method.as_raw_HOGDescriptor' class='fnname'>as_raw_HOGDescriptor</a>(&amp;self) -&gt; <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.pointer.html'>*mut </a><a class='enum' href='../../libc/enum.c_void.html' title='libc::c_void'>c_void</a></code></h4>
+</div><h3 class='impl'><code>impl <a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a></code></h3><div class='impl-items'><h4 id='method.default' class='method'><code>fn <a href='#method.default' class='fnname'>default</a>() -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.new' class='method'><code>fn <a href='#method.new' class='fnname'>new</a>(_winSize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, _blockSize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, _blockStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, _cellSize: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, _nbins: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, _derivAperture: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, _winSigma: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, _histogramNormType: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>, _L2HysThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, _gammaCorrection: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, _nlevels: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.i32.html'>i32</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- _derivAperture: default 1
+- _winSigma: default -1
+- _histogramNormType: default HOGDescriptor::L2Hys
+- _L2HysThreshold: default 0.2
+- _gammaCorrection: default false
+- _nlevels: default HOGDescriptor::DEFAULT_NLEVELS</p>
+</div><h4 id='method.copy' class='method'><code>fn <a href='#method.copy' class='fnname'>copy</a>(d: &amp;<a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_descriptor_size' class='method'><code>fn <a href='#method.get_descriptor_size' class='fnname'>get_descriptor_size</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='type' href='../../libc/type.size_t.html' title='libc::size_t'>size_t</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.check_detector_size' class='method'><code>fn <a href='#method.check_detector_size' class='fnname'>check_detector_size</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_win_sigma' class='method'><code>fn <a href='#method.get_win_sigma' class='fnname'>get_win_sigma</a>(&amp;self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.set_svm_detector' class='method'><code>fn <a href='#method.set_svm_detector' class='fnname'>set_svm_detector</a>(&amp;mut self, _svmdetector: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.copy_to' class='method'><code>fn <a href='#method.copy_to' class='fnname'>copy_to</a>(&amp;self, c: &amp;<a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.compute' class='method'><code>fn <a href='#method.compute' class='fnname'>compute</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, descriptors: &amp;<a class='struct' href='../../opencv/types/struct.VectorOffloat.html' title='opencv::types::VectorOffloat'>VectorOffloat</a>, winStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, padding: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, locations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint.html' title='opencv::types::VectorOfPoint'>VectorOfPoint</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- winStride: default Size()
+- padding: default Size()
+- locations: default vector<Point>()</p>
+</div><h4 id='method.detect_weights' class='method'><code>fn <a href='#method.detect_weights' class='fnname'>detect_weights</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, foundLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint.html' title='opencv::types::VectorOfPoint'>VectorOfPoint</a>, weights: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfdouble.html' title='opencv::types::VectorOfdouble'>VectorOfdouble</a>, hitThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, winStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, padding: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, searchLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint.html' title='opencv::types::VectorOfPoint'>VectorOfPoint</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- hitThreshold: default 0
+- winStride: default Size()
+- padding: default Size()
+- searchLocations: default vector<Point>()</p>
+</div><h4 id='method.detect' class='method'><code>fn <a href='#method.detect' class='fnname'>detect</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, foundLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint.html' title='opencv::types::VectorOfPoint'>VectorOfPoint</a>, hitThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, winStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, padding: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, searchLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfPoint.html' title='opencv::types::VectorOfPoint'>VectorOfPoint</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- hitThreshold: default 0
+- winStride: default Size()
+- padding: default Size()
+- searchLocations: default vector<Point>()</p>
+</div><h4 id='method.detect_multi_scale' class='method'><code>fn <a href='#method.detect_multi_scale' class='fnname'>detect_multi_scale</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, foundLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfRect.html' title='opencv::types::VectorOfRect'>VectorOfRect</a>, foundWeights: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfdouble.html' title='opencv::types::VectorOfdouble'>VectorOfdouble</a>, hitThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, winStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, padding: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, scale: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, finalThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, useMeanshiftGrouping: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- hitThreshold: default 0
+- winStride: default Size()
+- padding: default Size()
+- scale: default 1.05
+- finalThreshold: default 2.0
+- useMeanshiftGrouping: default false</p>
+</div><h4 id='method.detect_multi_scale_weights' class='method'><code>fn <a href='#method.detect_multi_scale_weights' class='fnname'>detect_multi_scale_weights</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, foundLocations: &amp;<a class='struct' href='../../opencv/types/struct.VectorOfRect.html' title='opencv::types::VectorOfRect'>VectorOfRect</a>, hitThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, winStride: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, padding: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, scale: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, finalThreshold: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.f64.html'>f64</a>, useMeanshiftGrouping: <a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.bool.html'>bool</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- hitThreshold: default 0
+- winStride: default Size()
+- padding: default Size()
+- scale: default 1.05
+- finalThreshold: default 2.0
+- useMeanshiftGrouping: default false</p>
+</div><h4 id='method.compute_gradient' class='method'><code>fn <a href='#method.compute_gradient' class='fnname'>compute_gradient</a>(&amp;self, img: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, grad: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, angleOfs: &amp;<a class='struct' href='../../opencv/core/struct.Mat.html' title='opencv::core::Mat'>Mat</a>, paddingTL: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>, paddingBR: <a class='struct' href='../../opencv/core/struct.Size.html' title='opencv::core::Size'>Size</a>) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='primitive' href='https://doc.rust-lang.org/nightly/std/primitive.tuple.html'>()</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<div class='docblock'><p>fault value for arguments:
+- paddingTL: default Size()
+- paddingBR: default Size()</p>
+</div><h4 id='method.get_default_people_detector' class='method'><code>fn <a href='#method.get_default_people_detector' class='fnname'>get_default_people_detector</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/types/struct.VectorOffloat.html' title='opencv::types::VectorOffloat'>VectorOffloat</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+<h4 id='method.get_daimler_people_detector' class='method'><code>fn <a href='#method.get_daimler_people_detector' class='fnname'>get_daimler_people_detector</a>(&amp;mut self) -&gt; <a class='enum' href='https://doc.rust-lang.org/nightly/core/result/enum.Result.html' title='core::result::Result'>Result</a>&lt;<a class='struct' href='../../opencv/types/struct.VectorOffloat.html' title='opencv::types::VectorOffloat'>VectorOffloat</a>, <a class='struct' href='https://doc.rust-lang.org/nightly/collections/string/struct.String.html' title='collections::string::String'>String</a>&gt;</code></h4>
+</div><h2 id='implementations'>Trait Implementations</h2><h3 class='impl'><code>impl <a class='trait' href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html' title='core::ops::Drop'>Drop</a> for <a class='struct' href='../../opencv/objdetect/struct.HOGDescriptor.html' title='opencv::objdetect::HOGDescriptor'>HOGDescriptor</a></code></h3><div class='impl-items'><h4 id='method.drop' class='method'><code>fn <a href='https://doc.rust-lang.org/nightly/core/ops/trait.Drop.html#method.drop' class='fnname'>drop</a>(&amp;mut self)</code></h4>
+</div></section>
+    <section id='search' class="content hidden"></section>
+
+    <section class="footer"></section>
+
+    <aside id="help" class="hidden">
+        <div>
+            <h1 class="hidden">Help</h1>
+
+            <div class="shortcuts">
+                <h2>Keyboard Shortcuts</h2>
+
+                <dl>
+                    <dt>?</dt>
+                    <dd>Show this help dialog</dd>
+                    <dt>S</dt>
+                    <dd>Focus the search field</dd>
+                    <dt>&larrb;</dt>
+                    <dd>Move up in search results</dd>
+                    <dt>&rarrb;</dt>
+                    <dd>Move down in search results</dd>
+                    <dt>&#9166;</dt>
+                    <dd>Go to active search result</dd>
+                </dl>
+            </div>
+
+            <div class="infos">
+                <h2>Search Tricks</h2>
+
+                <p>
+                    Prefix searches with a type followed by a colon (e.g.
+                    <code>fn:</code>) to restrict the search to a given type.
+                </p>
+
+                <p>
+                    Accepted types are: <code>fn</code>, <code>mod</code>,
+                    <code>struct</code>, <code>enum</code>,
+                    <code>trait</code>, <code>type</code>, <code>macro</code>,
+                    and <code>const</code>.
+                </p>
+
+                <p>
+                    Search functions by type signature (e.g.
+                    <code>vec -> usize</code> or <code>* -> vec</code>)
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    
+
+    <script>
+        window.rootPath = "../../";
+        window.currentCrate = "opencv";
+        window.playgroundUrl = "";
+    </script>
+    <script src="../../jquery.js"></script>
+    <script src="../../main.js"></script>
+    
+    <script defer src="../../search-index.js"></script>
+</body>
+</html>
